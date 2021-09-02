@@ -6,7 +6,7 @@ public class AdminMenuImpl implements Mainable {
 
 
     @Override
-    public void showMainMenu(Mainable mainable) {
+    public void showMainMenu() {
         System.out.println("AdminMenu");
     }
 

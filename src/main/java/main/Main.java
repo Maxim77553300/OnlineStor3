@@ -1,6 +1,5 @@
 package main;
 
-import Entity.Admin;
 import Menu.*;
 
 import java.sql.*;
@@ -10,8 +9,14 @@ public class Main {
 
    //  ConnectionSQL.connectionSQL();
 
-        Mainable mainMenu = new MainMenuImpl();
-        mainMenu.showMainMenu((Mainable) new Admin("ggg","111"));
+        Mainable mainMenu = new AdminMenuImpl();
+        mainMenu.showMainMenu();
+
+        Mainable mainable1 = new UserMenuImpl();
+        mainable1.showMainMenu();
+
+        Mainable mainable2 = new DefaultMainMenuImpl();
+        mainable2.showMainMenu();
 
 
 
