@@ -1,6 +1,6 @@
 package Menu;
 
-public class MainMenuImpl implements Mainable{
+public class MainMenuImpl implements MainI {
 
 
     @Override

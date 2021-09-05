@@ -1,6 +1,4 @@
-package Entity;
-
-import Menu.Mainable;
+package model;
 
 public class Admin {
     private String name;

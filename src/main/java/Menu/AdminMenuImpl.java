@@ -1,8 +1,6 @@
 package Menu;
 
-import Entity.Admin;
-
-public class AdminMenuImpl implements Mainable {
+public class AdminMenuImpl implements MainI {
 
 
     @Override
