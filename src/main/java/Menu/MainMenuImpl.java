@@ -1,10 +1,14 @@
 package Menu;
 
-public class MainMenuImpl implements MainI {
+import model.User;
+
+public class MainMenuImpl implements MainI<Object> {
+
+
 
 
     @Override
-    public void showMainMenu() {
+    public void showMainMenu(Object entity) {
 
     }
 }

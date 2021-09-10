@@ -1,11 +1,13 @@
 package Menu;
 
-public class UserMenuImpl implements MainI {
+import model.User;
+
+public class UserMenuImpl implements MainI<User> {
 
 
 
     @Override
-    public void showMainMenu() {
+    public void showMainMenu(User user) {
         System.out.println("UserMenu");
 
 

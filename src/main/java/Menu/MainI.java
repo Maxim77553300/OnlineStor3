@@ -1,7 +1,9 @@
 package Menu;
 
-public interface MainI {
+public interface MainI<T> {
 
-    void showMainMenu();
+    void showMainMenu(T entity);
+
+
 
 }

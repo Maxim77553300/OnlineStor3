@@ -1,10 +1,12 @@
 package Menu;
 
-public class AdminMenuImpl implements MainI {
+import model.Admin;
+
+public class AdminMenuImpl implements MainI<Admin> {
 
 
     @Override
-    public void showMainMenu() {
+    public void showMainMenu(Admin admin) {
         System.out.println("AdminMenu");
     }
 

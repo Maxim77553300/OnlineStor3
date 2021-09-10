@@ -1,5 +1,7 @@
 package Menu;
 
+import model.User;
+
 import java.util.Scanner;
 
 public class StartImpl implements StartAble {
@@ -9,7 +11,7 @@ public class StartImpl implements StartAble {
         System.out.println("Start");
 
         MainI mainable2 = new DefaultMainMenuImpl();
-        mainable2.showMainMenu();
+        mainable2.showMainMenu(new Object());
         InputDataUtil.inputDataMethod();
 
         // логика по выбору

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class UserRepository implements Repository<User> {
 
-    public static final String SELECT_PHONES = "SELECT * FROM shop1.phones;";
+
     public static final String SELECT_USERS = "SELECT * FROM shop1.users;";
     public static final String INSERT_USER = "INSERT INTO users (name,password_hash,is_admin) VALUES (?,?,?)";
 
@@ -59,7 +59,10 @@ public class UserRepository implements Repository<User> {
         return list;
     }
 
+    @Override
+    public void delete(User user) {
 
+    }
 
 
     @SneakyThrows

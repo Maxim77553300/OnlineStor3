@@ -2,11 +2,13 @@ package model;
 
 public class Phone {
     private String name;
-    private Double price;
+    private Integer price;
+    private Integer number;
 
-    public Phone(String name, Double price) {
+    public Phone(String name, Integer price, Integer number) {
         this.name = name;
         this.price = price;
+        this.number = number;
     }
 
     public String getName() {
@@ -17,11 +19,28 @@ public class Phone {
         this.name = name;
     }
 
-    public Double getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(Integer price) {
         this.price = price;
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", number=" + number +
+                '}';
     }
 }
