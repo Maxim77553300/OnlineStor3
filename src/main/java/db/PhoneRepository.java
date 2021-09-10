@@ -11,7 +11,7 @@ public class PhoneRepository implements Repository<Phone> {
 
     private static String SELECT_PHONES = "SELECT * FROM shop1.phones;";
     private static String INSERT_PHONES = "INSERT INTO shop1.phones (name,price,number) VALUES (?,?,?);";
-    private static String GET_ID = "SELECT id FROM shop1.phones WHERE name = ? ;";
+    private static String GET_ID = "SELECT id FROM shop1.phones WHERE name = '?' ;";
     private static String GET_NUMBER_PHONE = "SELECT number FROM shop1.phones WHERE id = ? ";
     private static String DELETE_PHONES = "UPDATE shop1.phones SET number = ? WHERE id = ? ";
 
